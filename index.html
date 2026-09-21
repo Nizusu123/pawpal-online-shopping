@@ -1,12 +1,251 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pawpal online shopping</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawpal Online | Alimentos, Juguetes y Medicamentos</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fuentes e íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>pawpal online shopping</h1>
+
+  <!-- Sistema de Control de Navegación por Pestañas (CSS Pure Tab Control) -->
+  <input type="radio" name="nav-tab" id="tab-inicio" checked>
+  <input type="radio" name="nav-tab" id="tab-alimentos">
+  <input type="radio" name="nav-tab" id="tab-juguetes">
+  <input type="radio" name="nav-tab" id="tab-medicamentos">
+  <input type="radio" name="nav-tab" id="tab-nosotros">
+
+  <!-- Navegación Principal -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-paw logo-icon"></i>
+      <span>Pawpal <strong>Online</strong></span>
+    </div>
+    <nav class="nav-links">
+      <label for="tab-inicio" class="nav-btn"><i class="fa-solid fa-house"></i> Inicio</label>
+      <label for="tab-alimentos" class="nav-btn"><i class="fa-solid fa-bowl-food"></i> Alimentos</label>
+      <label for="tab-juguetes" class="nav-btn"><i class="fa-solid fa-gamepad"></i> Juguetes</label>
+      <label for="tab-medicamentos" class="nav-btn"><i class="fa-solid fa-pills"></i> Medicamentos</label>
+      <label for="tab-nosotros" class="nav-btn"><i class="fa-solid fa-heart"></i> Nosotros</label>
+    </nav>
+  </header>
+
+  <!-- Contenedor Principal de Subpáginas -->
+  <main class="content-wrapper">
+
+    <!-- ================= SUBPÁGINA 1: INICIO ================= -->
+    <section class="page page-inicio">
+      <div class="hero">
+        <div class="hero-text">
+          <span class="badge">Bienvenido a Pawpal Online</span>
+          <h1>Todo lo que tus mascotas aman en un solo lugar</h1>
+          <p>Ofrecemos alimento premium, juguetes interactivos y medicamentos certificados para que tus perros y gatos vivan felices y sanos.</p>
+          <div class="hero-actions">
+            <label for="tab-alimentos" class="btn btn-primary">Explorar Alimentos <i class="fa-solid fa-arrow-right"></i></label>
+            <a href="https://wa.me/+50236566344?text=Hola,%20busco%20información%20general%20sobre%20sus%20productos" class="btn btn-whatsapp-inline" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i> Contactar por WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="glow-bg"></div>
+          <div class="card-float cat">
+            <i class="fa-solid fa-cat"></i>
+            <span>Para Gatos</span>
+          </div>
+          <div class="card-float dog">
+            <i class="fa-solid fa-dog"></i>
+            <span>Para Perros</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accesos rápidos a Subpáginas -->
+      <div class="features-grid">
+        <label for="tab-alimentos" class="feature-card clickable">
+          <i class="fa-solid fa-bowl-food feature-icon"></i>
+          <h3>Alimentos</h3>
+          <p>Las mejores marcas de nutrición balanceada para cada etapa de vida.</p>
+        </label>
+        <label for="tab-juguetes" class="feature-card clickable">
+          <i class="fa-solid fa-bone feature-icon"></i>
+          <h3>Juguetes</h3>
+          <p>Diversión garantizada para ejercitar la mente y energía de tu mascota.</p>
+        </label>
+        <label for="tab-medicamentos" class="feature-card clickable">
+          <i class="fa-solid fa-kit-medical feature-icon"></i>
+          <h3>Medicamentos</h3>
+          <p>Antiparasitarios, vitaminas y productos de salud certificados.</p>
+        </label>
+      </div>
+    </section>
+
+    <!-- ================= SUBPÁGINA 2: ALIMENTOS ================= -->
+    <section class="page page-alimentos">
+      <div class="section-header">
+        <i class="fa-solid fa-bowl-food category-header-icon color-food"></i>
+        <h2>Alimentos y Nutrición</h2>
+        <p>Nutrición de alta calidad adaptada para perros y gatos de todas las edades.</p>
+      </div>
+
+      <div class="product-grid">
+        <!-- Producto 1 -->
+        <div class="card">
+          <span class="tag tag-dog">Perros</span>
+          <h4>Alimento Holístico Cachorro</h4>
+          <p>Fórmula rica en proteína, libre de cereales e ideal para un crecimiento fuerte.</p>
+          <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20el%20Alimento%20Holístico%20Cachorro" target="_blank" class="card-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+          </a>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="card">
+          <span class="tag tag-cat">Gatos</span>
+          <h4>Alimento Estéril Adulto</h4>
+          <p>Fórmula especializada para el control de peso y salud del sistema urinario.</p>
+          <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20el%20Alimento%20Estéril%20Adulto" target="_blank" class="card-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+          </a>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="card">
+          <span class="tag tag-dual">Perros y Gatos</span>
+          <h4>Lata Paté Húmedo Senior</h4>
+          <p>Textura suave y fácil de digerir para mascotas en edad avanzada.</p>
+          <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20la%20Lata%20Paté%20Húmedo%20Senior" target="_blank" class="card-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SUBPÁGINA 3: JUGUETES ================= -->
+    <section class="page page-juguetes">
+      <div class="section-header">
+        <i class="fa-solid fa-gamepad category-header-icon color-toys"></i>
+        <h2>Juguetes Interactivos</h2>
+        <p>Entretenimiento y estimulación física y mental para tus peludos.</p>
+      </div>
+
+      <div class="product-grid">
+        <!-- Producto 1 -->
+        <div class="card">
+          <span class="tag tag-dog">Perros</span>
+          <h4>Dispensador de Premios Kong</h4>
+          <p>Goma ultra resistente para morder, perfecta para reducir la ansiedad.</p>
+          <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20el%20Dispensador%20de%20Premios" target="_blank" class="card-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+          </a>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="card">
+          <span class="tag tag-cat">Gatos</span>
+          <h4>Torre Rascadora de 3 Niveles</h4>
+          <p>Incluye plumas colgantes y superficies de yute para afilar garras.</p>
+          <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20la%20Torre%20Rascadora" target="_blank" class="card-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+          </a>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="card">
+          <span class="tag tag-cat">Gatos</span>
+          <h4>Juguete Ratón con Láser</h4>
+          <p>Estimula el instinto cazador con movimientos y luz proyectada.</p>
+          <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20el%20Juguete%20Ratón%20con%20Láser" target="_blank" class="card-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SUBPÁGINA 4: MEDICAMENTOS ================= -->
+    <section class="page page-medicamentos">
+      <div class="section-header">
+        <i class="fa-solid fa-pills category-header-icon color-meds"></i>
+        <h2>Medicamentos y Salud</h2>
+        <p>Productos veterinarios seguros para el cuidado preventivo y salud integral.</p>
+      </div>
+
+      <div class="product-grid">
+        <!-- Producto 1 -->
+        <div class="card">
+          <span class="tag tag-dual">Perros y Gatos</span>
+          <h4>Antiparasitario Masticable</h4>
+          <p>Protección efectiva contra pulgas, garrapatas y parásitos internos.</p>
+          <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20el%20Antiparasitario%20Masticable" target="_blank" class="card-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+          </a>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="card">
+          <span class="tag tag-dual">Perros y Gatos</span>
+          <h4>Multivitamínico en Jarabe</h4>
+          <p>Fortalece las defensas y promueve un pelaje brillante y sedoso.</p>
+          <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20el%20Multivitamínico%20en%20Jarabe" target="_blank" class="card-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+          </a>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="card">
+          <span class="tag tag-dog">Perros</span>
+          <h4>Limpiador Otico Antiséptico</h4>
+          <p>Gotas para prevención de infecciones y limpieza profunda de oídos.</p>
+          <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20el%20Limpiador%20Otico" target="_blank" class="card-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SUBPÁGINA 5: NOSOTROS ================= -->
+    <section class="page page-nosotros">
+      <div class="about-hero">
+        <h2>Amor por los animales en Pawpal Online</h2>
+        <p>Somos apasionados por la salud y el bienestar de los integrantes más peludos de tu familia.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="icon-box"><i class="fa-solid fa-shield-cat"></i></div>
+          <h3>Garantía de Calidad</h3>
+          <p>Productos 100% originales y certificados para asegurar la salud de tu mascota.</p>
+        </div>
+        <div class="about-card">
+          <div class="icon-box"><i class="fa-solid fa-user-doctor"></i></div>
+          <h3>Asesoría Inmediata</h3>
+          <p>Atención directa por WhatsApp para resolver dudas antes de tu compra.</p>
+        </div>
+      </div>
+
+      <div class="cta-box">
+        <h3>¿Necesitas asesoría para tu mascota?</h3>
+        <p>Escríbenos directamente y te ayudaremos a elegir la mejor opción.</p>
+        <a href="https://wa.me/1234567890?text=Hola,%20quisiera%20recibir%20asesoría%20personalizada" class="btn btn-whatsapp-inline" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i> Hablar con un Asesor
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Botón Flotante Global de WhatsApp -->
+  <a href="https://wa.me/1234567890?text=Hola,%20quisiera%20hacer%20una%20consulta" class="whatsapp-float" target="_blank" title="Escríbenos por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="pulse-ring"></span>
+  </a>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2026 Pawpal Online. Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
